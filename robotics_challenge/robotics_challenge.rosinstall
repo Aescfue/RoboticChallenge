@@ -1,0 +1,21 @@
+# Rosinstaller for the Kobuki simulator
+- git:
+    local-name: kobuki
+    uri: 'https://github.com/robotics-upo/kobuki.git'
+    version: melodic
+- git:
+    local-name: kobuki_core
+    uri: 'https://github.com/robotics-upo/kobuki_core'
+    version: melodic
+- git:
+    local-name: kobuki_desktop
+    uri: 'https://github.com/robotics-upo/kobuki_desktop.git'
+    version: devel
+- git:
+    local-name: kobuki_msgs
+    uri: 'https://github.com/robotics-upo/kobuki_msgs.git'
+    version: devel
+- git: 
+    local-name: yujin_ocs
+    uri: 'http://github.com/robotics-upo/yujin_ocs.git'
+    version: devel

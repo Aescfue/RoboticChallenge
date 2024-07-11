@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="goal_x" default="-1.9"/>
+  <arg name="goal_y" default="1.9"/>
+
+  <node name="planner" pkg="robotics_challenge" type="planner_node.py" output="screen">
+    <param name="goal/x" value="$(arg goal_x)" />
+    <param name="goal/y" value="$(arg goal_y)" />
+    <remap from="/goal_pose" to="/move_base_simple/goal"/>
+  </node>
+
+</launch>
+
